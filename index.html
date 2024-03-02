@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 <body>
     <div class="taskbar">
@@ -28,7 +29,10 @@
     </header>
 
     <section class="Introduction">
-
+      <h2>Introduction</h2>
+      <p>Hello, and welcome Veewood's furniture.</p>
+      <p></p>
+      <p></p>
     </section>
     <main>
         <section class="product-details">
@@ -36,7 +40,7 @@
             <p>Brand: VeeWood Furniture</p>
             <p>Material: Medium Oak</p>
             <p>Dimensions: 160 x 190 x 50 cm</p>
-            <p>Price:ksh 25,000</p>
+            <p>Price:ksh 30,000</p>
         </section>
 
        <section class="product-image">
@@ -87,37 +91,6 @@
     <footer>
         <p>&copy; VeeWood Furniture. All rights reserved.</p>
     </footer>
-    <script>
-const taskbar = document.querySelector('.taskbar');
-const lastScrollTop = window.pageYOffset;
-
-window.addEventListener('scroll', () => {
-  const currentScrollTop = window.pageYOffset;
-
-  // If the user has scrolled down, hide the taskbar
-  if (currentScrollTop > lastScrollTop) {
-    taskbar.classList.add('hidden');
-  } else {
-    // If the user has scrolled up, show the taskbar
-    taskbar.classList.remove('hidden');
-  }
-
-  lastScrollTop = currentScrollTop;
-});
-$(document).ready(function(){
-  $('.slider').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    fade: true,
-    cssEase: 'linear',
-    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-    arrows: true,
-    rtl: true
-  });
-});
-        </script>
+    <script src="index.js"></script>
 </body>
 </html>

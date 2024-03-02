@@ -4,13 +4,15 @@ body {
 }
 
 header {
-    background-color: #f4f4f4;
+    background-color: #362121;
     padding: 20px;
     text-align: center;
 }
 
 h1 {
     margin-bottom: 0;
+    color: white;
+    
 }
 
 .product-details, .product-image, .product-description {

@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: gray !important;
 }
 
 header {
@@ -16,16 +17,22 @@ h1 {
 }
 
 .product-details, .product-image, .product-description {
-    margin: 20px;
+    margin: 30px;
+    background-color:gray;
 }
 
 .product-image img {
     max-width: 100%;
     height: auto;
 }
+.contact-us{
+    background-color: grey;
+    padding: 50px;
+    margin: auto;
+}
 
 footer {
-    background-color: #f4f4f4;
+    background-color: #220e0e;
     padding: 20px;
     text-align: center;
 }

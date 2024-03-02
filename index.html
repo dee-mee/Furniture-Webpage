@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VeeWood Furniture</title>
-    <link rel="stylesheet" href="index.css">
- <!--   <style>
-        body {
-            background-image:url("images/logo.jpeg"); 
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-    </style>
-    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
+    <div class="taskbar">
+        <a href="/" class="logo">
+            
+        </a>
+        <ul class="menu">
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </div>
     <header>
+        
         <h1>VeeWood Furniture</h1>
-        <img src="images/logo.jpeg" alt="VeeWood furniture logo" style="height: 50%; width:90%;">
+        <img src="/images/logo.jpeg" alt="VeeWood furniture logo" style="height: 50%; width:90%;">
     </header>
+
     <section class="Introduction">
 
     </section>
@@ -30,22 +38,36 @@
             <p>Dimensions: 160 x 190 x 50 cm</p>
             <p>Price:ksh 25,000</p>
         </section>
-        <section class="product-image">
-            <img src="/images/bed1.jpeg" alt=" cream chester bed" height="500" width="400">
-        </section>
+
+       <section class="product-image">
+  <div class="slider">
+    <div><img src="/images/bed1.jpeg" alt=" cream chester bed" width="400"></div>
+    <div><img src="/images/bed2.jpeg" alt=" dark walnut bed" width="400"></div>
+    <div><img src="/images/bed3.jpeg" alt=" white oak bed" width="400"></div>
+  </div>
+</section>
+
+
+
         <section class="product-description">
+            <div class="container">
             <h2>Product Description</h2>
             <p>The Veewood furniture Bed Frame is a versatile and stylish addition to any bedroom.</p>
             <p> It can be used as a bedside table or a seating area. The frame is available in a range of sizes to suit your bedroom space. The Chester Bed Frame is perfect for those who want a stylish and functional storage solution for their bedroom.</p>
-            
+        </div>
         </section>
 
         <section class="about-us">
+            <div class="container">
             <h2>About Us</h2>
             <p>Vee Dreamworks is a leading provider of stylish and functional furniture for modern homes. Our team of dedicated designers and craftsmen work tirelessly to create products that are both beautiful and practical, ensuring that our customers have a comfortable and elegant living space. With a focus on quality and durability, we're committed to providing the best possible products and services to our valued customers.</p>
             <p>If you have any questions or concerns, please don't hesitate to contact us. We're always here to help.</p>
             <p>Thank you for choosing Vee Dreamworks!</p>
+            </div>  
         </section>
+
+
+
         <section class="contact-us">
             <h2>Contact Us</h2>
             <p>Please feel free to reach out to us using the following methods:</p>
@@ -65,5 +87,37 @@
     <footer>
         <p>&copy; VeeWood Furniture. All rights reserved.</p>
     </footer>
+    <script>
+const taskbar = document.querySelector('.taskbar');
+const lastScrollTop = window.pageYOffset;
+
+window.addEventListener('scroll', () => {
+  const currentScrollTop = window.pageYOffset;
+
+  // If the user has scrolled down, hide the taskbar
+  if (currentScrollTop > lastScrollTop) {
+    taskbar.classList.add('hidden');
+  } else {
+    // If the user has scrolled up, show the taskbar
+    taskbar.classList.remove('hidden');
+  }
+
+  lastScrollTop = currentScrollTop;
+});
+$(document).ready(function(){
+  $('.slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    cssEase: 'linear',
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+    arrows: true,
+    rtl: true
+  });
+});
+        </script>
 </body>
 </html>

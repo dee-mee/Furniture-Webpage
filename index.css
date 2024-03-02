@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: gray !important;
+    background-color: #362121 !important;
 }
 
 header {
@@ -9,30 +9,106 @@ header {
     padding: 20px;
     text-align: center;
 }
+.taskbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: top 0.3s ease;
+}
 
+.taskbar.hidden {
+    top: -50px;
+}
+
+.taskbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.taskbar .logo {
+    height: 30px;
+}
+
+.taskbar .menu {
+    display: flex;
+    align-items: center;
+}
+
+.taskbar .menu li {
+    margin: 0 10px;
+}
+
+.taskbar .menu a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
 h1 {
     margin-bottom: 0;
     color: white;
     
 }
-
+.product-image img,
+.product-details img,
+.about-us img {
+  max-width: 100%;
+  height: auto;
+}
 .product-details, .product-image, .product-description {
     margin: 30px;
     background-color:gray;
+    align-items: center;
+    text-align: center;
+    text-transform: inherit;
 }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
 
 .product-image img {
     max-width: 100%;
     height: auto;
 }
+.slider {
+    width: 100%;
+    height: 400vh;
+  overflow: hidden;
+  }
+  .slider div {
+    width: 100%;
+    height: 70% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider img {
+    width: 80%;
+    height: auto;
+  }
 .contact-us{
     background-color: grey;
     padding: 50px;
-    margin: auto;
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
 }
 
 footer {
-    background-color: #220e0e;
-    padding: 20px;
+    background-color: #e7dcdc;
+    padding: 5px;
     text-align: center;
+
 }

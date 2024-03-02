@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.product-details, .product-image, .product-description {
+    margin: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}

@@ -57,6 +57,9 @@ h1,h2 {
     color: white;
     
 }
+p {
+    color: #e7dcdc;
+}
 
 .about-us img {
   max-width: 80%;
@@ -70,7 +73,9 @@ h1,h2 {
     text-transform: inherit;
     text-decoration-color: #e7dcdc;
 }
-
+ul.contact-us{
+    color: #e7dcdc;
+}
 .container {
     max-width: 400px;
     margin: 0 auto;
@@ -87,24 +92,24 @@ h1,h2 {
     height: 50vh;
   overflow: hidden;
   }
-  .slider div {
+.slider div {
     width: 100%;
     height: 70% ;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .slider img {
+.slider img {
     width: 80%;
     height: auto;
-  }
+}
 .contact-us{
     background-color:#362121 ;
     padding: 50px;
     margin: 0 auto;
     width: 80%;
-    align-items: center;
+    text-align: center;
 }
 
 footer {

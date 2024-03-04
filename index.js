@@ -15,18 +15,28 @@ window.addEventListener('scroll', () => {
 
   lastScrollTop = currentScrollTop;
 });
+
 $(document).ready(function(){
   $('.slider').slick({
-    autoplay: true,
-    autoplaySpeed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    arrows: false,
+    pauseOnHover: false,
     fade: true,
-    cssEase: 'linear',
-    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-    arrows: true,
-    rtl: true
+    cssEase: 'linear'
+    
   });
 });
 }
+const lastScrollTop = 0;
+let isMouseDown = false;
+// Get handle to the div that will contain
+// our draggable object (in this case a <div>)
+const objHandle = document.getElementById("drag");
+objHandle.onmousedown = onMouseDown;
+// Handle mouse-down event for the object
+
+init();

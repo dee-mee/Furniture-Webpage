@@ -10,19 +10,24 @@ header {
     text-align: center;
 }
 .taskbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
     background-color: #333;
     color: #fff;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-    transition: top 0.3s ease;
+
+
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .taskbar.hidden {
@@ -93,11 +98,11 @@ ul.contact-us{
     overflow: hidden;
   }
 .slider div {
-    width: 100%;
+    width: 80%;
     height: 70% ;
     display: flex;
     justify-content: center;
-    align-items: center;
+   
 }
   
 .slider img {

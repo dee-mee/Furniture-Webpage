@@ -1,4 +1,4 @@
-function init() {
+{
 const taskbar = document.querySelector('.taskbar');
 const lastScrollTop = window.pageYOffset;
 

@@ -10,69 +10,30 @@
 
 </head>
 <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#product-details">Product Details</a></li>
+            <li><a href="#prices">Prices</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#reviews">Customer Reviews</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
     <section class="home svg_shape bg_image" id="home" style="background-image: url(/images/modern-1.jpg)">
         <div class="full_height">
 
-            <nav class="navbar navbar-default nav_scroll navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-     <!--                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-
-                        </button>-->
-
-                        <!-- LOGO -->
-
-                    </div>
-                    <div class="navbar-brand class=col-xs-6" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="col-xs-3">
-                                <a href="#home">Home</a>
-                            </li>
-                            <li class="col-xs-3">
-                                <a href="#about">About</a>
-                            </li>
-                            <li class="col-xs-3">
-                                <a href="#services">Services</a>
-                            </li>
-                            <li class="col-xs-3">
-                                <a href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!--.container-->
-            </nav>
-            <div class="display-table">
-                <div class="display-table-cell">
                     <div class="container">
-                        <h3>Hello, welcome to veewood Furniture</h3>
-                        <h1 class="cd-headline letters rotate-2 is-full-width">
-                            <span class="cd-words-wrapper">
-                                <b class="is-visible">Interior</b>
-                                <b>VeeWood Furniture</b>
-                            </span>
-                        </h1>
+                       <h1><b>veewood Furniture</b></h1>
                     </div>
-                </div>
-            </div>
-            <div class="container go_down_container">
-                <div class="go_down">
-                    <a href="#about" class="smooth_scroll">
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
-            </div>
-            <svg class="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
-                viewBox="0 0 100 100" preserveAspectRatio="none" style="fill: #fff;">
-                <path d="M0 0 C 50 100 80 100 100 0 Z"></path>
-            </svg>
-        </div><!--.full_height-->
+        </div>
     </section>
 
 
 
-    <section class="new-arrivals">
+   <!-- <section class="new-arrivals">
         <div class="container">
             <h2>New Arrivals(Coming Soon)</h2>
         </div>
@@ -85,13 +46,14 @@
                 <img src="/images/sofa1.png" alt="Sofa " width="200" height="200">
                 <p class="price">ksh.2599</p>
             </div>
-            <!-- Add more products as needed -->
+           Add more products as needed 
             <div class="product">
                 <img src="/images/sofa1.png" alt="table " width="200" height="200">
                 <p class="price">ksh.1599</p>
             </div>
         </div>
     </section>
+    -->
 
         <section class="product-details">
             <div class="product-images"></div>
@@ -139,11 +101,11 @@
                 </tbody>
               </table>
         </section>
-    <div class="price">
+    <div class="price-container">
         <h2 class="container">Prices</h2>
         <h2 style="text-align:center">CHESTER BEDS</h2>   
 
-        <p><table>
+        <p><table style="background-color: rgb(43, 15, 6);">
             <tr>
             <th>BED Dimensions</th>
             <th>BED actual price(ksh)</th>
@@ -285,11 +247,31 @@
             </div>
         </section>
     </main>
+    <button id="back-to-top">Back to Top</button>
     <footer>
         <h3>&copy; VeeWood Furniture. All rights reserved.</h3>
     </footer>
 
     <script src="custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Show the back to top button when the user scrolls down the page
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) {
+        $('#back-to-top').fadeIn();
+      } else {
+        $('#back-to-top').fadeOut();
+      }
+    });
+
+    // Handle the click event on the back to top button
+    $('#back-to-top').click(function(e) {
+      e.preventDefault();
+      $('html, body').animate({ scrollTop: 0 }, 'slow');
+    });
+  });
+</script>
 
 
 </body>

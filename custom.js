@@ -19,7 +19,7 @@ $(function () {
             }
         });
         //-- filter items on button click --//
-        $(".portfolio ul li").on('click', function () {
+        $(".about ul li").on('click', function () {
             var filterValue = $(this).attr('data-filter');
             $grid.isotope({ filter: filterValue });
             $(this).addClass("active_filter").siblings().removeClass("active_filter");

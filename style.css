@@ -7,10 +7,11 @@ body {
     font-family: Poppins, Arial, sans-serif;
     font-size: 12px;
     font-weight: 300;
-    line-height: 2.2;
-    background-color: #fff;
-    color: #130000;
+    color: #050404f8;
     overflow: hidden;
+    line-height: 1.6;
+    background-color: #e7dfdf !important;
+  
 }
 
 img {
@@ -93,6 +94,21 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     position: relative;
 }
+.product-details, .product-description {
+  margin: 30px;
+  background-color:#362121;
+  align-items: center;
+  text-transform: inherit;
+  text-decoration-color: #e7dcdc;
+}
+
+.container {
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
 .product-image img {
   max-width: 80%;
   height: 100%;
@@ -162,9 +178,36 @@ section {
     background-attachment: fixed;
 }
 
-.animated_scroll {
-    animation-name: none;
-    visibility: hidden;
+.taskbar.hidden {
+  visibility: hidden;
+  top: -50px;
+  position: absolute;
+
+
+}
+
+.taskbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.taskbar .menu {
+  display: flex;
+  align-items: center;
+}
+
+.taskbar .menu li {
+  margin: 0 10px;
+}
+
+.taskbar .menu a {
+  color: #fff;
+  text-transform: uppercase !important;
+  font-size: 14px;
+  transition: all .3s ease;
+
+
 }
 
 h1, h2, h3, h4,

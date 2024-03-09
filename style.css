@@ -5,7 +5,7 @@
 
 body {
     font-family: Poppins, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     color: #fcf7f7;
     overflow: auto !important;
@@ -16,10 +16,9 @@ body {
 
 img {
     border-style: none;
-    width: 100%;
+    width: 30%;
     height: auto;
-    max-width: 100%;
-    vertical-align: top; 
+    vertical-align: bottom; 
 }
 
 a, a:hover, a:focus  {
@@ -84,46 +83,14 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     margin: 0;
     padding: 0;
 }
 
-.display-table {
-    display: table;
-    height: 100%;
-    width: 100%;
-}
-
-.display-table-cell {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.padding-top-110 {
-    padding-top: 110px;
-}
-
-.padding-bottom-90 {
-    padding-bottom: 90px;
-}
-
-.sec_title {
-    padding-top: 50px;
-    padding-bottom: 75px;
-    text-align: center;
-}
-
-.sec_title h2 {
-    font-size: 45px;
-    font-weight: 600;
-    color: #000;
-    display: inline-block;
-    position: relative;
-}
 .product-details, .product-description {
   margin: 30px;
-  background-color:#362121;
+  background-color:#2b0e0e;
   align-items: center;
   text-transform: inherit;
   text-decoration-color: #e7dcdc;
@@ -137,8 +104,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-image img {
-  max-width: 80%;
-  height: 100%;
+  max-width: 40%;
+  height: 50%;
 }
 
 table {
@@ -153,23 +120,14 @@ table, th, td {
 }
 
 th {
-  background-color: #bbb0b0;
+  background-color: #2b0e0e;
   color: white;
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color:#2b0e0e;
 }
 
-.sec_title h2:after {
-    content: "";
-    position: absolute;
-    bottom: -21px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 92px;
-    border-bottom: 2px solid rgba(0,0,0,0.5);
-}
 
 .sec_title h2:before {
     content: "/ / /";
@@ -192,12 +150,9 @@ section {
 }
 
 .primary_bg {
-    background-color: #f4f4f4;
+    background-color: #2b0e0e;
 }
 
-.primary_bg svg {
-    fill: #f4f4f4;
-}
 
 .bg_image {
     background-size: cover;
@@ -239,37 +194,13 @@ section {
 
 
 
-.collapsed .icon-bar {
-    transform: none !important;
-    opacity: 1 !important;
-}
-
-.home {
-    overflow: hidden;
-}
-
-.home .display-table {
-    height: 100%;
-    background-color: rgba(0,0,0,0.7);
-}
-
-.home h3 {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    margin-top: 50px;
-    letter-spacing: 4px;
-    padding-left: 5px;
-}
-
 .home h1 {
     color: #fff;
-    font-size: 95px;
+    font-size: 80px;
     font-weight: 900;
     margin-top: 10px;
     margin-bottom: 35px;
+    text-align: center;
 }
 
 .home h1 b em {
@@ -299,7 +230,7 @@ section {
 }
 
 footer {
-  background-color: #683333;
+  background-color: #2b0e0e;
   padding: 5px;
   text-align: center;
   font-size: small;

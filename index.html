@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VeeWood Furniture</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -15,7 +16,7 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#product-details">Product Details</a></li>
-            <li><a href="#prices">Prices</a></li>
+            <li><a href="#Prices">Prices</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#reviews">Customer Reviews</a></li>
             <li><a href="#contact">Contact Us</a></li>
@@ -24,10 +25,19 @@
       </header>
     <section class="home svg_shape bg_image" id="home" style="background-image: url(/images/modern-1.jpg)">
         <div class="full_height">
-
+            <div class="display-table">
+                <div class="display-table-cell">
                     <div class="container">
-                       <h1><b>veewood Furniture</b></h1>
+                        <h1 class="cd-headline letters rotate-2 is-full-width">
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">Chester beds</b>
+                                <b>VeeWood Furniture</b>
+                            </span>
+                        </h1>
                     </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -55,7 +65,7 @@
     </section>
     -->
 
-        <section class="product-details">
+        <section class="product-details" id="product-details">
             <div class="product-images"></div>
             <h2>Product images</h2>
        
@@ -97,7 +107,7 @@
               </table>
         </section>
     <div class="price-container">
-        <h2 class="container">Prices</h2>
+        <h2 class="container"  id="Prices">Prices</h2>
         <h2 style="text-align:center">CHESTER BEDS</h2>   
 
         <p><table style="background-color: rgb(43, 15, 6);">
@@ -168,7 +178,7 @@
         </section>
 
 
-        <section id="About"></section>
+        <section id="about"></section>
             <div class="about-content">
                 <h2 class="heading" >About <span>Us</span></h2>
                 <p>
@@ -195,7 +205,7 @@
 
 
 
-       <section class="reviews">
+       <section class="reviews" id="reviews">
         <h2>Customer Reviews</h2>
         <div class="review-container slide-in-right">
         <div class="review-card">
@@ -257,6 +267,7 @@
         $('#back-to-top').fadeIn();
       } else {
         $('#back-to-top').fadeOut();
+        $('html, body').animate({ scrollBottom: 0 }, 'slow');
       }
     });
 

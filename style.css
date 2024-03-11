@@ -31,6 +31,7 @@ nav {
   background-color: #333;
   padding: 10px 0;
   position: relative;
+  width: 100%;
 }
 .nav-btn {
   position: absolute;
@@ -111,9 +112,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  max-width: 200px;
+  max-width: 100px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0px;
   text-align: center;
 }
 
@@ -129,7 +130,7 @@ table {
 
 table, th, td {
   border: 1px solid #ddd;
-  padding: 2px;
+  padding: 0px;
   text-align: left;
 }
 

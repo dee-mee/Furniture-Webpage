@@ -70,7 +70,7 @@ nav ul li a {
 }
 @media screen and (max-width: 768px) {
   .nav-wrapper ul {
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
   }
@@ -133,6 +133,50 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+.taskbar.hidden {
+  visibility: hidden;
+  top: -50px;
+  position: absolute;
+
+
+}
+
+.taskbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.taskbar .menu {
+  display: flex;
+  align-items: center;
+}
+
+.taskbar .menu li {
+  margin: 0 10px;
+}
+
+.taskbar .menu a {
+  color: #fff;
+  text-transform: uppercase !important;
+  font-size: 14px;
+  transition: all .3s ease;
+
+
+}
+
+
+
+.home h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+
 .product-details, .product-description {
   margin: 30px;
   background-color:#2b0e0e;
@@ -187,50 +231,6 @@ tr:nth-child(even) {
 
 }
 
-.taskbar.hidden {
-  visibility: hidden;
-  top: -50px;
-  position: absolute;
-
-
-}
-
-.taskbar a {
-  color: #fff;
-  text-decoration: none;
-}
-
-
-.taskbar .menu {
-  display: flex;
-  align-items: center;
-}
-
-.taskbar .menu li {
-  margin: 0 10px;
-}
-
-.taskbar .menu a {
-  color: #fff;
-  text-transform: uppercase !important;
-  font-size: 14px;
-  transition: all .3s ease;
-
-
-}
-
-
-
-.home h1 {
-    color: #fff;
-    font-size: 60px;
-    font-weight: 900;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    text-align: left;
-}
-
-
 .prices-container {
   width: 80%;
   margin: 0 auto;
@@ -240,14 +240,48 @@ tr:nth-child(even) {
 }
 /*End Home Section */
 .contact-us{
-  background-color: #2b0e0e;
+  background-color:#1b0808;
   padding: 10px;
   margin: 0 auto;
   width: 80%;
   text-align: center;
 
 }
+.review-container{
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin-top: 1.4rem;
+}
 
+.social a {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  /* border: 1.6px solid var(--primary-color); */
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 0.39rem;
+  text-align: center;
+  opacity: 0;
+  animation: SocialAni 1s ease forwards;
+  animation-delay: calc(.2s * var(--socialAni));
+}
+
+.social a:hover {
+  color: var(--primary-dark);
+  background-color: var(--primary-color);
+  box-shadow: 0 0 20px var(--primary-color);
+  transition: all .3s ease-in-out;
+}
 footer {
   background-color: #2b0e0e;
   padding: 5px;

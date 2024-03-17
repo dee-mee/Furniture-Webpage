@@ -22,6 +22,14 @@ body {
   background-size: cover;
   height: 90vh; /* Adjust this value as needed */
 }
+.display-table-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
 img {
     border-style: none;
     width: 30%;

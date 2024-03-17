@@ -20,7 +20,11 @@ body {
 .home {
   background-image: url(images/modern-1.jpg);
   background-size: cover;
-  height: 90vh; /* Adjust this value as needed */
+  height: 100vh; /* Increase the height to ensure the content is visible */
+  z-index: 101;
+  display: flex; /* Add this line */
+  align-items: center; /* Add this line */
+  justify-content: center; /* Add this line */
 }
 .display-table-cell {
   display: flex;

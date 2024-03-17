@@ -3,20 +3,23 @@
     padding: 0
 
 }
+html {
+  font-size: 10px;
+}
 
 body {
-    font-family: Poppins, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: #fcf7f7;
-    overflow: auto !important;
-    line-height: 1.6;
-    background-color: #1b0808 !important;
-  
+  font-family: Poppins, Arial, sans-serif;
+  font-size: 1.4rem; /* 14px */
+  font-weight: 300;
+  color: #fcf7f7;
+  overflow: auto !important;
+  line-height: 1.6;
+  background-color: #1b0808 !important;
 }
 .home {
   background-image: url(images/modern-1.jpg);
   background-size: cover;
+  height: 90vh; /* Adjust this value as needed */
 }
 img {
     border-style: none;

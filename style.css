@@ -190,6 +190,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     margin-bottom: 25px;
     text-align: left;
+    align-items: center;
 }
 
 
@@ -254,15 +255,13 @@ tr:nth-child(even) {
   background-color: #683333;
 
 }
-/*End Home Section */
-.contact-us{
-  background-color:#1b0808;
-  padding: 10px;
-  margin: 0 auto;
-  width: 80%;
-  text-align: center;
-
+.about-us{
+  text-align: left;
+  align-items: normal;
 }
+
+/*End Home Section */
+
 .review-container{
   flex-wrap: wrap;
   align-items: center;
@@ -279,7 +278,14 @@ tr:nth-child(even) {
   text-align: center;
   margin-top: 10px;
 }
+.contact-us{
+  background-color:#1b0808;
+  padding: 10px;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
 
+}
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -287,29 +293,7 @@ tr:nth-child(even) {
   margin-top: 1.4rem;
 }
 
-.social a {
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  display: grid;
-  place-items: center;
-  text-decoration: none;
-  background-color: var(--primary-color);
-  color: #ffffff;
-  /* border: 1.6px solid var(--primary-color); */
-  font-size: 1.5rem;
-  border-radius: 50%;
-  padding: 0.39rem;
-  text-align: center;
-  opacity: 0;
-  animation: SocialAni 1s ease forwards;
-  animation-delay: calc(.2s * var(--socialAni));
-}
 
-.social a:hover {
-  color: var(--primary-dark);
-  background-color: var(--primary-color);
-  box-shadow: 0 0 20px var(--primary-color);
-  transition: all .3s ease-in-out;
-}
 footer {
   background-color: #2b0e0e;
   padding: 5px;

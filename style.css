@@ -257,7 +257,7 @@ tr:nth-child(even) {
 }
 .about-us{
   text-align: left;
-  align-items: normal;
+  align-items: left;
 }
 
 /*End Home Section */

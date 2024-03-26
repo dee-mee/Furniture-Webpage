@@ -255,13 +255,12 @@ tr:nth-child(even) {
   background-color: #683333;
 
 }
-.about-us{
-  text-align: left;
-  align-items: left;
-}
 
 /*End Home Section */
-
+.about-content {
+  text-align: left;
+  align-items: normal;
+}
 .review-container{
   flex-wrap: wrap;
   align-items: center;
